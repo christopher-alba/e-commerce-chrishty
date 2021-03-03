@@ -1,11 +1,9 @@
-import React from 'react'
-import "./app.css"
-import Button from './components/jcux/JCUXButton/JCUXButton'
+import React from "react";
+import "./app.css";
+import Button from "./components/jcux/JCUXButton";
 
 const App = () => {
-  return (
-    <Button>Im a button</Button>
-  )
-}
+  return <Button type="primary">Im a button</Button>;
+};
 
-export default App
+export default App;

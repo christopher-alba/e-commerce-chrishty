@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import spacing from "../repeatedStyles/spacing";
 
 const Link = styled.a`
   ${(props) => {
@@ -159,6 +160,7 @@ const Link = styled.a`
       }
   `;
   }}
+  ${spacing}
 `;
 
 export default Link;

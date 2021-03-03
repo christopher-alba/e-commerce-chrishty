@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import spacing from "../repeatedStyles/spacing";
 
 const Button = styled.button`
   outline: none;
@@ -149,6 +150,7 @@ const Button = styled.button`
   transition: 300ms;
   font-family: arial;
   font-size: 0.8rem;
+  ${spacing}
 `;
 
 export default Button;

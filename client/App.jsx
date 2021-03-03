@@ -19,6 +19,12 @@ const App = () => {
       <div style={{ background: "black" }}>
         <Button type="light-outlined">Im a button</Button>
       </div>
+      <div>
+        <p>
+          This is some text{" "}
+          <JCUXCustomLink href="hello">Im a Link</JCUXCustomLink>
+        </p>
+      </div>
 
       <JCUXCustomLink type="button-primary" href="hello">
         Im a Link
@@ -27,6 +33,12 @@ const App = () => {
         Im a Link
       </JCUXCustomLink>
       <JCUXCustomLink type="button-tertiary" href="hello">
+        Im a Link
+      </JCUXCustomLink>
+      <JCUXCustomLink type="button-dark" href="hello">
+        Im a Link
+      </JCUXCustomLink>
+      <JCUXCustomLink type="button-light" href="hello">
         Im a Link
       </JCUXCustomLink>
       <JCUXCustomLink type="button-primary-outlined" href="hello">
@@ -38,6 +50,14 @@ const App = () => {
       <JCUXCustomLink type="button-tertiary-outlined" href="hello">
         Im a Link
       </JCUXCustomLink>
+      <JCUXCustomLink type="button-dark-outlined" href="hello">
+        Im a Link
+      </JCUXCustomLink>
+      <div style={{ background: "black" }}>
+        <JCUXCustomLink type="button-light-outlined" href="hello">
+          Im a Link
+        </JCUXCustomLink>
+      </div>
     </Fragment>
   );
 };

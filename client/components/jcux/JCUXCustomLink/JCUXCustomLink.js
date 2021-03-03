@@ -2,6 +2,27 @@ import styled from "styled-components";
 
 const Link = styled.a`
   ${(props) => {
+    if (!props.type) {
+      return `
+        color:inherit;
+        font-size: inherit;
+        `;
+    } else {
+      return `
+        padding: 10px 50px;
+        border-radius: 50px;
+        letter-spacing: 3px;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: 300ms;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        font-family: arial;
+        font-size: 0.8rem;`;
+    }
+  }}
+  ${(props) => {
     if (props.type === "button-primary")
       return `   
         background: ${props.theme.colors.jcBlue100};
@@ -38,6 +59,32 @@ const Link = styled.a`
       }
       &:focus{
         box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcPink20};
+        outline: none;
+      }
+    `;
+    if (props.type === "button-dark")
+      return `
+      background: ${props.theme.colors.jcBlack100}; 
+      color:white;
+      border: none;
+      &:hover, &:focus{
+        background: ${props.theme.colors.jcBlack80};
+      }
+      &:focus{
+        box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcBlack20};
+        outline: none;
+      }
+    `;
+    if (props.type === "button-light")
+      return `
+      background: white; 
+      color:black;
+      border: none;
+      &:hover, &:focus{
+        background: ${props.theme.colors.jcGrey80};
+      }
+      &:focus{
+        box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcGrey20};
         outline: none;
       }
     `;
@@ -83,18 +130,35 @@ const Link = styled.a`
          outline: none;
       }
   `;
+    if (props.type === "button-dark-outlined")
+      return `
+      background: transparent;
+      color:${props.theme.colors.jcBlack100};
+      border: 2px solid ${props.theme.colors.jcBlack100};
+      &:hover, &:focus{
+         background: ${props.theme.colors.jcBlack80};
+         color: white;
+      }
+      &:focus{
+         box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcBlack20};
+         outline: none;
+      }
+  `;
+    if (props.type === "button-light-outlined")
+      return `
+      background: transparent;
+      color:white;
+      border: 2px solid white;
+      &:hover, &:focus{
+         background: white;
+         color: black;
+      }
+      &:focus{
+         box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcGrey20};
+         outline: none;
+      }
+  `;
   }}
-  padding: 10px 50px;
-  border-radius: 50px;
-  letter-spacing: 3px;
-  cursor: pointer;
-  text-transform: uppercase;
-  transition: 300ms;
-  text-decoration: none;
-  display: inline-block;
-  text-align: center;
-  font-family: arial;
-  font-size: 0.8rem;
 `;
 
 export default Link;

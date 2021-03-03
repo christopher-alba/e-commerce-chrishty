@@ -1,3 +1,7 @@
 h1 {
-    font-weight: 200;
+  font-weight: 200;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }

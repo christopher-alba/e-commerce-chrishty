@@ -3,6 +3,7 @@ import backgrounds from "../repeatedStyles/backgrounds";
 import border from "../repeatedStyles/border";
 import borderRadius from "../repeatedStyles/borderRadius";
 import boxShadow from "../repeatedStyles/boxShadow";
+import childSpacings from "../repeatedStyles/childSpacings";
 import colors from "../repeatedStyles/colors";
 import spacing from "../repeatedStyles/spacing";
 import widths from "../repeatedStyles/widths";
@@ -24,11 +25,12 @@ const Flex = styled.div`
   }}
   ${backgrounds}
     ${border}
-     ${borderRadius}
-     ${boxShadow}
+    ${borderRadius}
+    ${boxShadow}
     ${colors}
     ${spacing}
     ${widths}
+    ${childSpacings}
 `;
 
 export default Flex;

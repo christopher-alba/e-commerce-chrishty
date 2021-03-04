@@ -1,5 +1,4 @@
 const colors = (props) => {
-  console.log(props);
   if (props.color === "jcBlue100")
     return `color: ${props.theme.colors.jcBlue100};`;
   if (props.color === "jcBlue80")

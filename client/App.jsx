@@ -16,7 +16,7 @@ const App = () => {
       >
         Hello There
       </JCUXText>
-      <JCUXFlex flexDirection="column" alignItems="center">
+      <JCUXFlex flexDirection="column" alignItems="center" childSpacingBottom="20px">
         <JCUXText type="body-default" italic>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet a in
           reiciendis eveniet incidunt, quos dolorum ad voluptatem labore officia

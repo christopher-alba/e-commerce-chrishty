@@ -2,6 +2,7 @@ import styled from "styled-components";
 import spacing from "../repeatedStyles/spacing";
 import React from "react";
 import Loading from "../../svg/loading-button.svg";
+import widths from "../repeatedStyles/widths";
 const Button = styled.button`
   outline: none;
   border: none;
@@ -175,6 +176,7 @@ const Button = styled.button`
     }
   }}
   ${spacing}
+  ${widths}
 `;
 
 const JCUXButton = (props) => {

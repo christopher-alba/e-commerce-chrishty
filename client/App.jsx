@@ -3,6 +3,7 @@ import "./app.css";
 import JCUXText from "./components/jcux/JCUXText";
 import JCUXButton from "./components/jcux/JCUXButton";
 import JCUXBox from "./components/jcux/JCUXBox";
+import JCUXFlex from "./components/jcux/JCUXFlex";
 const App = () => {
   return (
     <Fragment>
@@ -15,14 +16,7 @@ const App = () => {
       >
         Hello There
       </JCUXText>
-      <JCUXText type="body-default" italic>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet a in
-        reiciendis eveniet incidunt, quos dolorum ad voluptatem labore officia
-        et libero delectus quam saepe qui illo at! Quidem nulla mollitia eaque
-        iusto incidunt nobis distinctio vel asperiores pariatur accusamus natus
-        dolor rerum in, corporis hic tempore quod dicta temporibus.
-      </JCUXText>
-      <JCUXBox background="red" padding="50px" borderRadius="30px" color="jcPink20">
+      <JCUXFlex flexDirection="column" alignItems="center">
         <JCUXText type="body-default" italic>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet a in
           reiciendis eveniet incidunt, quos dolorum ad voluptatem labore officia
@@ -30,10 +24,25 @@ const App = () => {
           iusto incidunt nobis distinctio vel asperiores pariatur accusamus
           natus dolor rerum in, corporis hic tempore quod dicta temporibus.
         </JCUXText>
-      </JCUXBox>
-      <JCUXButton type="primary" size="small">
-        Im a button :)
-      </JCUXButton>
+        <JCUXBox
+          background="red"
+          padding="50px"
+          borderRadius="30px"
+          color="jcPink20"
+        >
+          <JCUXText type="body-default" italic>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet a in
+            reiciendis eveniet incidunt, quos dolorum ad voluptatem labore
+            officia et libero delectus quam saepe qui illo at! Quidem nulla
+            mollitia eaque iusto incidunt nobis distinctio vel asperiores
+            pariatur accusamus natus dolor rerum in, corporis hic tempore quod
+            dicta temporibus.
+          </JCUXText>
+        </JCUXBox>
+        <JCUXButton type="primary" size="small" width="50%">
+          Im a button :)
+        </JCUXButton>
+      </JCUXFlex>
     </Fragment>
   );
 };

@@ -7,9 +7,9 @@ const App = () => {
   return (
     <Fragment>
       <Button>Im a button</Button>
-      <Button type="primary">Im a button</Button>
-      <Button type="secondary">Im a button</Button>
-      <Button type="tertiary">Im a button</Button>
+      <Button type="primary" size="small">Im a button</Button>
+      <Button type="secondary" size="medium">Im a button</Button>
+      <Button type="tertiary" size="large">Im a button</Button>
       <Button type="dark">Im a button</Button>
       <Button type="light">Im a button</Button>
       <Button type="primary-outlined">Im a button</Button>

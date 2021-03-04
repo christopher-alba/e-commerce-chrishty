@@ -5,6 +5,14 @@ const Button = styled.button`
   outline: none;
   border: none;
   background: transparent;
+  padding: 10px 50px;
+  border-radius: 50px;
+  letter-spacing: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 300ms;
+  font-family: arial;
+  font-size: 0.8rem;
   ${(props) => {
     if (props.type === "primary")
       return `   
@@ -142,14 +150,29 @@ const Button = styled.button`
     }
   `;
   }}
-  padding: 10px 50px;
-  border-radius: 50px;
-  letter-spacing: 3px;
-  cursor: pointer;
-  text-transform: uppercase;
-  transition: 300ms;
-  font-family: arial;
-  font-size: 0.8rem;
+  ${(props) => {
+    if (props.size === "small") {
+      return `
+      padding: 10px 30px;
+      border-radius: 50px;
+      font-size: 0.6rem;
+      letter-spacing: 1px;`;
+    }
+    if (props.size === "medium") {
+      return `
+      padding: 10px 50px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      letter-spacing: 3px;`;
+    }
+    if (props.size === "large") {
+      return `
+      padding: 10px 70px;
+      border-radius: 50px;
+      font-size: 1rem;
+      letter-spacing: 3px;`;
+    }
+  }}
   ${spacing}
 `;
 

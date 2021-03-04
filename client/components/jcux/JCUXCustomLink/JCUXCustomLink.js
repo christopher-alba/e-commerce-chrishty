@@ -160,6 +160,29 @@ const Link = styled.a`
       }
   `;
   }}
+  ${(props) => {
+    if (props.size === "small") {
+      return `
+      padding: 10px 30px;
+      border-radius: 50px;
+      font-size: 0.6rem;
+      letter-spacing: 1px;`;
+    }
+    if (props.size === "medium") {
+      return `
+      padding: 10px 50px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      letter-spacing: 3px;`;
+    }
+    if (props.size === "large") {
+      return `
+      padding: 10px 70px;
+      border-radius: 50px;
+      font-size: 1rem;
+      letter-spacing: 3px;`;
+    }
+  }}
   ${spacing}
 `;
 

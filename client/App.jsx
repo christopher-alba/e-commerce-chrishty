@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import "./app.css";
 import JCUXText from "./components/jcux/JCUXText";
-
+import JCUXButton from "./components/jcux/JCUXButton";
 const App = () => {
   return (
     <Fragment>
@@ -21,6 +21,7 @@ const App = () => {
         iusto incidunt nobis distinctio vel asperiores pariatur accusamus natus
         dolor rerum in, corporis hic tempore quod dicta temporibus.
       </JCUXText>
+      <JCUXButton type="primary" loading>Im a button :)</JCUXButton>
     </Fragment>
   );
 };

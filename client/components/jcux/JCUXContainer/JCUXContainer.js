@@ -5,22 +5,23 @@ import borderRadius from "../repeatedStyles/borderRadius";
 import boxShadow from "../repeatedStyles/boxShadow";
 import childSpacings from "../repeatedStyles/childSpacings";
 import colors from "../repeatedStyles/colors";
+import positions from "../repeatedStyles/positions";
 import spacing from "../repeatedStyles/spacing";
 import widths from "../repeatedStyles/widths";
-import positions from "../repeatedStyles/positions";
-const Box = styled.div`
-  ${(props) => {
-    if (props.flexGrow) return `flex-grow: ${props.flexGrow};`;
-  }}
-  ${colors}
-  ${spacing}
+
+const Container = styled.div`
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
   ${backgrounds}
   ${border}
   ${borderRadius}
   ${boxShadow}
-  ${widths}
   ${childSpacings}
+  ${colors}
   ${positions}
+  ${spacing}
+  ${widths}
 `;
 
-export default Box;
+export default Container;

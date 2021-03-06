@@ -3,8 +3,8 @@ import spacing from "../repeatedStyles/spacing";
 import React from "react";
 import Loading from "../../svg/loading-button.svg";
 import widths from "../repeatedStyles/widths";
+import colors from "../repeatedStyles/colors";
 const Button = styled.button`
-  outline: none;
   border: none;
   background: transparent;
   padding: 10px 50px;
@@ -177,6 +177,7 @@ const Button = styled.button`
   }}
   ${spacing}
   ${widths}
+  ${colors}
 `;
 
 const JCUXButton = (props) => {

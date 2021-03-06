@@ -5,6 +5,7 @@ import borderRadius from "../repeatedStyles/borderRadius";
 import boxShadow from "../repeatedStyles/boxShadow";
 import childSpacings from "../repeatedStyles/childSpacings";
 import colors from "../repeatedStyles/colors";
+import heights from "../repeatedStyles/heights";
 import positions from "../repeatedStyles/positions";
 import spacing from "../repeatedStyles/spacing";
 import widths from "../repeatedStyles/widths";
@@ -22,6 +23,7 @@ const Container = styled.div`
   ${positions}
   ${spacing}
   ${widths}
+  ${heights}
 `;
 
 export default Container;

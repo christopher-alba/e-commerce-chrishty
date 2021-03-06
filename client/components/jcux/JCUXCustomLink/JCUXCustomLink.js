@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import colors from "../repeatedStyles/colors";
 import spacing from "../repeatedStyles/spacing";
 
 const Link = styled.a`
@@ -184,6 +185,7 @@ const Link = styled.a`
     }
   }}
   ${spacing}
+  ${colors}
 `;
 
 export default Link;

@@ -8,6 +8,7 @@ import colors from "../repeatedStyles/colors";
 import spacing from "../repeatedStyles/spacing";
 import widths from "../repeatedStyles/widths";
 import positions from "../repeatedStyles/positions";
+import heights from "../repeatedStyles/heights";
 const Box = styled.div`
   ${(props) => {
     if (props.flexGrow) return `flex-grow: ${props.flexGrow};`;
@@ -21,6 +22,7 @@ const Box = styled.div`
   ${widths}
   ${childSpacings}
   ${positions}
+  ${heights}
 `;
 
 export default Box;

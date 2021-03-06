@@ -66,6 +66,13 @@ const Text = styled.p`
       `;
     }
   }}
+  ${(props) => {
+    if (props.letterSpacing) {
+      return `
+      letter-spacing: ${props.letterSpacing};
+      `;
+    }
+  }}
   ${spacing}
   ${colors}
 `;

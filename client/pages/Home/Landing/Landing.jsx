@@ -64,11 +64,22 @@ const Landing = () => {
             <JCUXText
               type="heading-large"
               marginTop="0px"
+              marginBottom="0px"
+              color="white"
+              size="3rem"
+              letterSpacing="4px"
+            >
+              CLASSY FASHION 
+            </JCUXText>
+            <JCUXText
+              type="heading-large"
+              marginTop="0px"
               marginBottom="20px"
               color="white"
               size="3rem"
+              letterSpacing="4px"
             >
-              CLASSY PIECES FOR ALL
+              FOR EVERYONE
             </JCUXText>
             <JCUXFlex childSpacingRight="20px">
               <JCUXCustomLink href="/shop" type="button-tertiary">

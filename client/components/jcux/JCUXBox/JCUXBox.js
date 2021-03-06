@@ -9,6 +9,7 @@ import spacing from "../repeatedStyles/spacing";
 import widths from "../repeatedStyles/widths";
 import positions from "../repeatedStyles/positions";
 import heights from "../repeatedStyles/heights";
+import backgroundImageSettings from "../repeatedStyles/backgroundImageSettings";
 const Box = styled.div`
   ${(props) => {
     if (props.flexGrow) return `flex-grow: ${props.flexGrow};`;
@@ -16,6 +17,7 @@ const Box = styled.div`
   ${colors}
   ${spacing}
   ${backgrounds}
+  ${backgroundImageSettings}
   ${border}
   ${borderRadius}
   ${boxShadow}

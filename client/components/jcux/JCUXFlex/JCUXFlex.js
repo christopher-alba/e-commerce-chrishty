@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import backgroundImageSettings from "../repeatedStyles/backgroundImageSettings";
 import backgrounds from "../repeatedStyles/backgrounds";
 import border from "../repeatedStyles/border";
 import borderRadius from "../repeatedStyles/borderRadius";
@@ -26,6 +27,7 @@ const Flex = styled.div`
     return flexProps;
   }}
   ${backgrounds}
+  ${backgroundImageSettings}
     ${border}
     ${borderRadius}
     ${boxShadow}

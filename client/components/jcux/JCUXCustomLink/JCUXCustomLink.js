@@ -1,6 +1,15 @@
 import styled from "styled-components";
+import backgroundImageSettings from "../repeatedStyles/backgroundImageSettings";
+import backgrounds from "../repeatedStyles/backgrounds";
+import border from "../repeatedStyles/border";
+import borderRadius from "../repeatedStyles/borderRadius";
+import boxShadow from "../repeatedStyles/boxShadow";
+import childSpacings from "../repeatedStyles/childSpacings";
 import colors from "../repeatedStyles/colors";
+import heights from "../repeatedStyles/heights";
+import positions from "../repeatedStyles/positions";
 import spacing from "../repeatedStyles/spacing";
+import widths from "../repeatedStyles/widths";
 
 const Link = styled.a`
   ${(props) => {
@@ -34,7 +43,7 @@ const Link = styled.a`
            background: ${props.theme.colors.jcBlue80};
         }
         &:focus{
-           box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcBlue20};
+           box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcBlue0};
            outline: none;
         }
       `;
@@ -47,7 +56,7 @@ const Link = styled.a`
           background: ${props.theme.colors.jcBlueGreen80};
         }
         &:focus{
-          box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcBlueGreen20};
+          box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcBlueGreen0};
           outline: none;
         }
       `;
@@ -60,7 +69,7 @@ const Link = styled.a`
         background: ${props.theme.colors.jcPink80};
       }
       &:focus{
-        box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcPink20};
+        box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcPink0};
         outline: none;
       }
     `;
@@ -73,7 +82,7 @@ const Link = styled.a`
         background: ${props.theme.colors.jcBlack80};
       }
       &:focus{
-        box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcBlack20};
+        box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcBlack0};
         outline: none;
       }
     `;
@@ -86,7 +95,7 @@ const Link = styled.a`
         background: ${props.theme.colors.jcGrey80};
       }
       &:focus{
-        box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcGrey20};
+        box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcGrey0};
         outline: none;
       }
     `;
@@ -100,7 +109,7 @@ const Link = styled.a`
          color: white;
       }
       &:focus{
-         box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcBlue20};
+         box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcBlue0};
          outline: none;
       }
     `;
@@ -114,7 +123,7 @@ const Link = styled.a`
          color: white;
       }
       &:focus{
-         box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcBlueGreen20};
+         box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcBlueGreen0};
          outline: none;
       }
     `;
@@ -128,7 +137,7 @@ const Link = styled.a`
          color: white;
       }
       &:focus{
-         box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcPink20};
+         box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcPink0};
          outline: none;
       }
   `;
@@ -142,7 +151,7 @@ const Link = styled.a`
          color: white;
       }
       &:focus{
-         box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcBlack20};
+         box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcBlack0};
          outline: none;
       }
   `;
@@ -156,7 +165,7 @@ const Link = styled.a`
          color: black;
       }
       &:focus{
-         box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcGrey20};
+         box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcGrey0};
          outline: none;
       }
   `;
@@ -186,6 +195,15 @@ const Link = styled.a`
   }}
   ${spacing}
   ${colors}
+  ${backgrounds}
+  ${backgroundImageSettings}
+  ${border}
+  ${borderRadius}
+  ${boxShadow}
+  ${childSpacings}
+  ${heights}
+  ${positions}
+  ${widths}
 `;
 
 export default Link;

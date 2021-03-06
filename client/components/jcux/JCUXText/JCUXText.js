@@ -73,6 +73,13 @@ const Text = styled.p`
       `;
     }
   }}
+  ${(props) => {
+    if (props.size) {
+      return `
+      font-size:${props.size};
+      `;
+    }
+  }}
   ${spacing}
   ${colors}
 `;

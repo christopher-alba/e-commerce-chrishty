@@ -25,7 +25,7 @@ const Button = styled.button`
            background: ${props.theme.colors.jcBlue80};
         }
         &:focus{
-           box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcBlue20};
+           box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcBlue0};
            outline: none;
         }
       `;
@@ -38,7 +38,7 @@ const Button = styled.button`
           background: ${props.theme.colors.jcBlueGreen80};
         }
         &:focus{
-          box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcBlueGreen20};
+          box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcBlueGreen0};
           outline: none;
         }
       `;
@@ -51,7 +51,7 @@ const Button = styled.button`
         background: ${props.theme.colors.jcPink80};
       }
       &:focus{
-        box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcPink20};
+        box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcPink0};
         outline: none;
       }
     `;
@@ -64,7 +64,7 @@ const Button = styled.button`
         background: ${props.theme.colors.jcBlack80};
       }
       &:focus{
-        box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcBlack20};
+        box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcBlack0};
         outline: none;
       }
     `;
@@ -77,7 +77,7 @@ const Button = styled.button`
         background: ${props.theme.colors.jcGrey80};
       }
       &:focus{
-        box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcGrey20};
+        box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcGrey0};
         outline: none;
       }
     `;
@@ -91,7 +91,7 @@ const Button = styled.button`
        color: white;
     }
     &:focus{
-       box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcBlue20};
+       box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcBlue0};
        outline: none;
     }
   `;
@@ -105,7 +105,7 @@ const Button = styled.button`
        color: white;
     }
     &:focus{
-       box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcBlueGreen20};
+       box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcBlueGreen0};
        outline: none;
     }
   `;
@@ -119,7 +119,7 @@ const Button = styled.button`
        color: white;
     }
     &:focus{
-       box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcPink20};
+       box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcPink0};
        outline: none;
     }
   `;
@@ -133,7 +133,7 @@ const Button = styled.button`
        color: white;
     }
     &:focus{
-       box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcBlack20};
+       box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcBlack0};
        outline: none;
     }
   `;
@@ -147,7 +147,7 @@ const Button = styled.button`
        color: black;
     }
     &:focus{
-       box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcGrey20};
+       box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcGrey0};
        outline: none;
     }
   `;

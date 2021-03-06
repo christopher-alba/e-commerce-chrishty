@@ -9,6 +9,8 @@ const colors = (props) => {
     return `color: ${props.theme.colors.jcBlue40};`;
   if (props.color === "jcBlue20")
     return `color: ${props.theme.colors.jcBlue20};`;
+  if (props.color === "jcBlue0")
+    return `color: ${props.theme.colors.jcBlue0};`;
   if (props.color === "jcBlueGreen100")
     return `color: ${props.theme.colors.jcBlueGreen100};`;
   if (props.color === "jcBlueGreen80")
@@ -19,6 +21,8 @@ const colors = (props) => {
     return `color: ${props.theme.colors.jcBlueGreen40};`;
   if (props.color === "jcBlueGreen20")
     return `color: ${props.theme.colors.jcBlueGreen20};`;
+  if (props.color === "jcBlueGreen0")
+    return `color: ${props.theme.colors.jcBlueGreen0};`;
   if (props.color === "jcPink100")
     return `color: ${props.theme.colors.jcPink100};`;
   if (props.color === "jcPink80")
@@ -29,6 +33,8 @@ const colors = (props) => {
     return `color: ${props.theme.colors.jcPink40};`;
   if (props.color === "jcPink20")
     return `color: ${props.theme.colors.jcPink20};`;
+  if (props.color === "jcPink0")
+    return `color: ${props.theme.colors.jcPink0};`;
   if (props.color === "jcBlack100")
     return `color: ${props.theme.colors.jcBlack100};`;
   if (props.color === "jcBlack80")
@@ -39,6 +45,8 @@ const colors = (props) => {
     return `color: ${props.theme.colors.jcBlack40};`;
   if (props.color === "jcBlack20")
     return `color: ${props.theme.colors.jcBlack20};`;
+  if (props.color === "jcBlack0")
+    return `color: ${props.theme.colors.jcBlack0};`;
   if (props.color === "jcGrey100")
     return `color: ${props.theme.colors.jcGrey100};`;
   if (props.color === "jcGrey80")
@@ -49,6 +57,8 @@ const colors = (props) => {
     return `color: ${props.theme.colors.jcGrey40};`;
   if (props.color === "jcGrey20")
     return `color: ${props.theme.colors.jcGrey20};`;
+  if (props.color === "jcGrey0")
+    return `color: ${props.theme.colors.jcGrey0};`;
   return `color: ${props.color};`;
 };
 

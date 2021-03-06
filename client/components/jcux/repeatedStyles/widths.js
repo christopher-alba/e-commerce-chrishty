@@ -1,4 +1,5 @@
 const widths = (props) => {
+  console.log(props);
   let widths = ``;
   if (props.maxWidth) widths += `max-width: ${props.maxWidth};`;
   if (props.minWidth) widths += `min-width: ${props.minWidth};`;

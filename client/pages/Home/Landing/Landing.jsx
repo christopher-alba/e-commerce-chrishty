@@ -62,37 +62,35 @@ const Landing = () => {
         <JCUXFlex height="100%" alignItems="center">
           <JCUXBox width="100%">
             <JCUXText
-              type="heading-large"
+              type={{ xs: "heading-small", sm: "heading-large" }}
               marginTop="0px"
               marginBottom="0px"
               color="white"
-              size="3rem"
               letterSpacing="4px"
             >
               CLASSY FASHION
             </JCUXText>
             <JCUXText
-              type="heading-large"
+              type={{ xs: "heading-small", sm: "heading-large" }}
               marginTop="0px"
               marginBottom="20px"
               color="white"
-              size="3rem"
               letterSpacing="4px"
             >
               FOR EVERYONE
             </JCUXText>
             <JCUXFlex
-              childSpacingRight={{ sm: "0px", lg: "20px" }}
-              childSpacingBottom={{ sm: "20px" }}
+              childSpacingRight={{ xs: "0px", sm: "20px" }}
+              childSpacingBottom={{ xs: "20px", sm: "0px" }}
               flexWrap="wrap"
             >
-              <JCUXButton type="secondary" width={{ sm: "100%" }}>
+              <JCUXButton type="secondary" width={{ xs: "100%", sm: "auto" }}>
                 VIEW PRODUCTS
               </JCUXButton>
               <JCUXCustomLink
                 href="/shop"
                 type="button-tertiary"
-                width={{ sm: "100%" }}
+                width={{ xs: "100%", sm: "auto" }}
               >
                 SHOP NOW
               </JCUXCustomLink>

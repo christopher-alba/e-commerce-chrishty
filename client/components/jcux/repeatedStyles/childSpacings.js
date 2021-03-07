@@ -11,22 +11,22 @@ const childSpacings = (props) => {
     }
     `;
     else {
-      if (props.childSpacingLeft.lg)
-        childSpacingProps += `@media(${breakpoints.lg}){
-          & > * {
-        margin-left: ${props.childSpacingLeft.lg};
-        &:first-child {
-            margin-left: 0px;
-        }
-    }}
-    `;
+      if (props.childSpacingLeft.xs)
+        childSpacingProps += `@media(${breakpoints.xs}){
+    & > * {
+  margin-left: ${props.childSpacingLeft.xs};
+  &:first-child {
+      margin-left: 0px;
+  }
+}}
+`;
       if (props.childSpacingLeft.sm)
         childSpacingProps += `@media(${breakpoints.sm}){
-      & > * {
-    margin-left: ${props.childSpacingLeft.sm};
-    &:first-child {
-        margin-left: 0px;
-    }
+& > * {
+margin-left: ${props.childSpacingLeft.sm};
+&:first-child {
+margin-left: 0px;
+}
 }}
 `;
       if (props.childSpacingLeft.md)
@@ -38,15 +38,15 @@ margin-left: ${props.childSpacingLeft.md};
 }
 }}
 `;
-      if (props.childSpacingLeft.xs)
-        childSpacingProps += `@media(${breakpoints.xs}){
-      & > * {
-    margin-left: ${props.childSpacingLeft.xs};
-    &:first-child {
-        margin-left: 0px;
-    }
-}}
-`;
+      if (props.childSpacingLeft.lg)
+        childSpacingProps += `@media(${breakpoints.lg}){
+          & > * {
+        margin-left: ${props.childSpacingLeft.lg};
+        &:first-child {
+            margin-left: 0px;
+        }
+    }}
+    `;
     }
   }
   if (props.childSpacingRight) {
@@ -59,33 +59,6 @@ margin-left: ${props.childSpacingLeft.md};
     }
     `;
     else {
-      if (props.childSpacingRight.lg)
-        childSpacingProps += `@media(${breakpoints.lg}){
-          & > * {
-      margin-right: ${props.childSpacingRight.lg};
-      &:last-child {
-          margin-right: 0px;
-      }
-      }}
-      `;
-      if (props.childSpacingRight.md)
-        childSpacingProps += `@media(${breakpoints.md}){
-        & > * {
-      margin-right: ${props.childSpacingRight.md};
-      &:last-child {
-          margin-right: 0px;
-      }
-    }}
-    `;
-      if (props.childSpacingRight.sm)
-        childSpacingProps += `@media(${breakpoints.sm}){
-        & > * {
-      margin-right: ${props.childSpacingRight.sm};
-      &:last-child {
-         margin-right: 0px;
-        }
-      }}
-      `;
       if (props.childSpacingRight.xs)
         childSpacingProps += `@media(${breakpoints.xs}){
         & > * {
@@ -95,6 +68,34 @@ margin-left: ${props.childSpacingLeft.md};
       }
   }}
   `;
+      if (props.childSpacingRight.sm)
+        childSpacingProps += `@media(${breakpoints.sm}){
+  & > * {
+margin-right: ${props.childSpacingRight.sm};
+&:last-child {
+   margin-right: 0px;
+  }
+}}
+`;
+      if (props.childSpacingRight.md)
+        childSpacingProps += `@media(${breakpoints.md}){
+& > * {
+margin-right: ${props.childSpacingRight.md};
+&:last-child {
+  margin-right: 0px;
+}
+}}
+`;
+
+      if (props.childSpacingRight.lg)
+        childSpacingProps += `@media(${breakpoints.lg}){
+          & > * {
+      margin-right: ${props.childSpacingRight.lg};
+      &:last-child {
+          margin-right: 0px;
+      }
+      }}
+      `;
     }
   }
   if (props.childSpacingTop) {
@@ -107,34 +108,6 @@ margin-left: ${props.childSpacingLeft.md};
     }
     `;
     else {
-      if (props.childSpacingTop.lg)
-        if (props.childSpacingTop.lg)
-          childSpacingProps += `@media(${breakpoints.lg}){
-      & > * {
-        margin-top: ${props.childSpacingTop.lg};
-        &:first-child {
-            margin-top: 0px;
-        }
-    }
-    }`;
-      if (props.childSpacingTop.md)
-        childSpacingProps += `@media(${breakpoints.md}){
-    & > * {
-      margin-top: ${props.childSpacingTop.md};
-      &:first-child {
-          margin-top: 0px;
-      }
-  }
-  }`;
-      if (props.childSpacingTop.sm)
-        childSpacingProps += `@media(${breakpoints.sm}){
-  & > * {
-    margin-top: ${props.childSpacingTop.sm};
-    &:first-child {
-        margin-top: 0px;
-    }
-}
-}`;
       if (props.childSpacingTop.xs)
         childSpacingProps += `@media(${breakpoints.xs}){
 & > * {
@@ -144,6 +117,33 @@ margin-left: ${props.childSpacingLeft.md};
   }
 }
 }`;
+      if (props.childSpacingTop.sm)
+        childSpacingProps += `@media(${breakpoints.sm}){
+& > * {
+margin-top: ${props.childSpacingTop.sm};
+&:first-child {
+margin-top: 0px;
+}
+}
+}`;
+      if (props.childSpacingTop.md)
+        childSpacingProps += `@media(${breakpoints.md}){
+& > * {
+margin-top: ${props.childSpacingTop.md};
+&:first-child {
+  margin-top: 0px;
+}
+}
+}`;
+      if (props.childSpacingTop.lg)
+        childSpacingProps += `@media(${breakpoints.lg}){
+      & > * {
+        margin-top: ${props.childSpacingTop.lg};
+        &:first-child {
+            margin-top: 0px;
+        }
+    }
+    }`;
     }
   }
   if (props.childSpacingBottom) {
@@ -156,15 +156,24 @@ margin-left: ${props.childSpacingLeft.md};
     }
     `;
     else {
-      if (props.childSpacingBottom.lg)
-        childSpacingProps += `@media(${breakpoints.lg}){
-        & > * {
-          margin-bottom: ${props.childSpacingBottom.lg};
-          &:last-child {
-              margin-bottom: 0px;
-          }
-      }
-      }`;
+      if (props.childSpacingBottom.xs)
+        childSpacingProps += `@media(${breakpoints.xs}){
+& > * {
+  margin-bottom: ${props.childSpacingBottom.xs};
+  &:last-child {
+      margin-bottom: 0px;
+  }
+}
+}`;
+      if (props.childSpacingBottom.sm)
+        childSpacingProps += `@media(${breakpoints.sm}){
+& > * {
+margin-bottom: ${props.childSpacingBottom.sm};
+&:last-child {
+  margin-bottom: 0px;
+}
+}
+}`;
       if (props.childSpacingBottom.md)
         childSpacingProps += `@media(${breakpoints.md}){
       & > * {
@@ -174,24 +183,15 @@ margin-left: ${props.childSpacingLeft.md};
         }
     }
     }`;
-      if (props.childSpacingBottom.sm)
-        childSpacingProps += `@media(${breakpoints.sm}){
-    & > * {
-      margin-bottom: ${props.childSpacingBottom.sm};
-      &:last-child {
-          margin-bottom: 0px;
+      if (props.childSpacingBottom.lg)
+        childSpacingProps += `@media(${breakpoints.lg}){
+        & > * {
+          margin-bottom: ${props.childSpacingBottom.lg};
+          &:last-child {
+              margin-bottom: 0px;
+          }
       }
-  }
-  }`;
-      if (props.childSpacingBottom.xs)
-        childSpacingProps += `@media(${breakpoints.xs}){
-  & > * {
-    margin-bottom: ${props.childSpacingBottom.xs};
-    &:last-child {
-        margin-bottom: 0px;
-    }
-}
-}`;
+      }`;
     }
   }
   return childSpacingProps;

@@ -60,7 +60,7 @@ const Landing = () => {
     >
       <JCUXContainer height="100%">
         <JCUXFlex height="100%" alignItems="center">
-          <JCUXBox>
+          <JCUXBox width="100%">
             <JCUXText
               type="heading-large"
               marginTop="0px"
@@ -81,7 +81,11 @@ const Landing = () => {
             >
               FOR EVERYONE
             </JCUXText>
-            <JCUXFlex childSpacingRight="20px" flexWrap="wrap">
+            <JCUXFlex
+              childSpacingRight={{ sm: "0px", lg: "20px" }}
+              childSpacingBottom={{ sm: "20px" }}
+              flexWrap="wrap"
+            >
               <JCUXButton type="secondary" width={{ sm: "100%" }}>
                 VIEW PRODUCTS
               </JCUXButton>

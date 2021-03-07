@@ -14,7 +14,6 @@ import widths from "../repeatedStyles/widths";
 const Container = styled.div`
   padding-left: 5%;
   padding-right: 5%;
-  width: 100%;
   ${backgrounds}
   ${backgroundImageSettings}
   ${border}

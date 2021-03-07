@@ -44,7 +44,7 @@ const StyledLink = styled(JCUXCustomLink)`
     background: ${(props) => props.theme.colors.jcGrey60};
   }
   &:focus {
-    box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.5);
+    box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.5);
     outline: none;
   }
 `;
@@ -69,7 +69,7 @@ const Landing = () => {
               size="3rem"
               letterSpacing="4px"
             >
-              CLASSY FASHION 
+              CLASSY FASHION
             </JCUXText>
             <JCUXText
               type="heading-large"
@@ -81,11 +81,17 @@ const Landing = () => {
             >
               FOR EVERYONE
             </JCUXText>
-            <JCUXFlex childSpacingRight="20px">
-              <JCUXCustomLink href="/shop" type="button-tertiary">
+            <JCUXFlex childSpacingRight="20px" flexWrap="wrap">
+              <JCUXButton type="secondary" width={{ sm: "100%" }}>
+                VIEW PRODUCTS
+              </JCUXButton>
+              <JCUXCustomLink
+                href="/shop"
+                type="button-tertiary"
+                width={{ sm: "100%" }}
+              >
                 SHOP NOW
               </JCUXCustomLink>
-              <JCUXButton type="secondary">VIEW PRODUCTS</JCUXButton>
             </JCUXFlex>
             <JCUXFlex childSpacingRight="20px" marginTop="20px">
               {socialLinks.map((item) => (

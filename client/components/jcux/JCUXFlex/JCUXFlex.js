@@ -22,6 +22,7 @@ const Flex = styled.div`
     if (props.flexShrink) flexProps += `flex-shrink: ${props.flexShrink};`;
     if (props.flexBasis) flexProps += `flex-basis: ${props.flexBasis};`;
     if (props.alignItems) flexProps += `align-items: ${props.alignItems};`;
+    if (props.flexWrap) flexProps += `flex-wrap: ${props.flexWrap};`;
     if (props.justifyContent)
       flexProps += `justify-content: ${props.justifyContent};`;
     return flexProps;

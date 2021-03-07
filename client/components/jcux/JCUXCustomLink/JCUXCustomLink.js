@@ -27,7 +27,9 @@ const Link = styled.a`
         text-transform: uppercase;
         transition: 300ms;
         text-decoration: none;
-        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content:center;
         text-align: center;
         font-family: arial;
         font-size: 0.8rem;`;

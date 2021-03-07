@@ -28,7 +28,11 @@ const Navbar = () => {
           <StyledLink color="white" href="/">
             <JCUXText
               fontWeight="600"
-              type="heading-large"
+              type={{
+                xs: "sub-heading-small",
+                sm: "sub-heading-default",
+                md: "sub-heading-large",
+              }}
               letterSpacing="5px"
               marginTop="0px"
               marginBottom="0px"

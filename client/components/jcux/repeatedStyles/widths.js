@@ -1,9 +1,6 @@
 import breakpoints from "../breakpoints";
 const widths = (props) => {
   let widths = ``;
-
-  if (props.maxWidth) widths += `max-width: ${props.maxWidth};`;
-  if (props.minWidth) widths += `min-width: ${props.minWidth};`;
   if (props.width) {
     if (typeof props.width === "string") widths += `width: ${props.width};`;
     else {
@@ -23,6 +20,50 @@ const widths = (props) => {
         widths += `@media (${breakpoints.lg}){
         width: ${props.width.lg}
          }`;
+    }
+    if (props.maxWidth) {
+      if (typeof props.maxWidth === "string")
+        widths += `width: ${props.maxWidth};`;
+      else {
+        if (props.maxWidth.xs)
+          widths += `@media (${breakpoints.xs}){
+            width: ${props.maxWidth.xs}
+           }`;
+        if (props.maxWidth.sm)
+          widths += `@media (${breakpoints.sm}){
+          width: ${props.maxWidth.sm}
+           }`;
+        if (props.maxWidth.md)
+          widths += `@media (${breakpoints.md}){
+          width: ${props.maxWidth.md}
+           }`;
+        if (props.maxWidth.lg)
+          widths += `@media (${breakpoints.lg}){
+          width: ${props.maxWidth.lg}
+           }`;
+      }
+    }
+    if (props.minWidth) {
+      if (typeof props.minWidth === "string")
+        widths += `width: ${props.minWidth};`;
+      else {
+        if (props.minWidth.xs)
+          widths += `@media (${breakpoints.xs}){
+              width: ${props.minWidth.xs}
+             }`;
+        if (props.minWidth.sm)
+          widths += `@media (${breakpoints.sm}){
+            width: ${props.minWidth.sm}
+             }`;
+        if (props.minWidth.md)
+          widths += `@media (${breakpoints.md}){
+            width: ${props.minWidth.md}
+             }`;
+        if (props.minWidth.lg)
+          widths += `@media (${breakpoints.lg}){
+            width: ${props.minWidth.lg}
+             }`;
+      }
     }
   }
   return widths;

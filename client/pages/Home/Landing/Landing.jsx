@@ -95,7 +95,11 @@ const Landing = () => {
                 SHOP NOW
               </JCUXCustomLink>
             </JCUXFlex>
-            <JCUXFlex childSpacingRight="20px" marginTop="20px">
+            <JCUXFlex
+              childSpacingRight="20px"
+              marginTop="20px"
+              justifyContent={{ xs: "center", sm: "left" }}
+            >
               {socialLinks.map((item) => (
                 <StyledLink
                   href={item.link}

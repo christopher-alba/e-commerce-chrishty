@@ -13,28 +13,28 @@ const Home = () => {
         link="/shop?=dresses"
       />
       <FeaturedProduct
-        background={`url("./images/dress.jpg")`}
-        linkType="button-dark"
-        linkText="View Our Beautiful Dresses"
-        link="/shop?=dresses"
+        background={`url("./images/suite.webp")`}
+        linkType="button-light"
+        linkText="View Our Masculine Suites"
+        link="/shop?=suites"
       />
       <FeaturedProduct
-        background={`url("./images/dress.jpg")`}
+        background={`url("./images/ties.jpg")`}
         linkType="button-dark"
-        linkText="View Our Beautiful Dresses"
-        link="/shop?=dresses"
+        linkText="View Our Sexy Ties"
+        link="/shop?=ties"
       />
       <FeaturedProduct
-        background={`url("./images/dress.jpg")`}
-        linkType="button-dark"
-        linkText="View Our Beautiful Dresses"
-        link="/shop?=dresses"
+        background={`url("./images/heels.jpg")`}
+        linkType="button-light"
+        linkText="View Our Beautiful Heels"
+        link="/shop?=heels"
       />
       <FeaturedProduct
-        background={`url("./images/dress.jpg")`}
+        background={`url("./images/dressShoes.webp")`}
         linkType="button-dark"
-        linkText="View Our Beautiful Dresses"
-        link="/shop?=dresses"
+        linkText="View Our Dress Shoes"
+        link="/shop?=dressShoes"
       />
     </JCUXBox>
   );

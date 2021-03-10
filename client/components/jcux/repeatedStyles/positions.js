@@ -5,6 +5,7 @@ const positions = (props) => {
   if (props.bottom) positions += `bottom: ${props.bottom};`;
   if (props.left) positions += `left: ${props.left};`;
   if (props.right) positions += `right: ${props.right};`;
+  if (props.zIndex) positions += `z-index: ${props.zIndex};`;
 
   return positions;
 };

@@ -18,10 +18,12 @@ const Navbar = () => {
     <JCUXFlex
       background="jcBlueGreen100"
       position="sticky"
+      top="0px"
       alignItems="center"
       paddingTop="10px"
       paddingBottom="10px"
       height="fit-content"
+      zIndex="1000"
     >
       <JCUXContainer height="50px">
         <JCUXFlex alignItems="center" height="100%">

@@ -22,7 +22,7 @@ const FeaturedProduct = ({ background, linkType, linkText, link }) => {
         marginLeft="auto"
         marginRight="auto"
         position="sticky"
-        top="50px"
+        top="100px"
         borderRadius="0px"
       >
         <JCUXText type={{xs:"body-small",md:"sub-heading-large"}} margin="10px">{linkText}</JCUXText>

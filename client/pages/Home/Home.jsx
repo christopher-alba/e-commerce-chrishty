@@ -2,6 +2,7 @@ import React from "react";
 import JCUXBox from "../../components/jcux/JCUXBox";
 import FeaturedProduct from "./FeaturedProduct";
 import Landing from "./Landing";
+
 const Home = () => {
   return (
     <JCUXBox>

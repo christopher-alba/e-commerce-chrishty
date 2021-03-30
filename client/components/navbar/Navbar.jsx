@@ -26,7 +26,7 @@ const Navbar = () => {
       zIndex="1000"
     >
       <JCUXContainer height="50px">
-        <JCUXFlex alignItems="center" height="100%">
+        <JCUXFlex alignItems="center" height="100%" childSpacingRight="50px">
           <StyledLink color="white" href="/">
             <JCUXText
               fontWeight="600"
@@ -40,6 +40,20 @@ const Navbar = () => {
               marginBottom="0px"
             >
               CHRISHTY
+            </JCUXText>
+          </StyledLink>
+          <StyledLink color="white" href="/shop">
+            <JCUXText
+              type={{
+                xs: "body-small",
+                sm: "body-default",
+                md: "body-large",
+              }}
+              letterSpacing="5px"
+              marginTop="0px"
+              marginBottom="0px"
+            >
+              SHOP
             </JCUXText>
           </StyledLink>
         </JCUXFlex>

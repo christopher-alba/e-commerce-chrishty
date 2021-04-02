@@ -1,0 +1,11 @@
+.authMainContainer {
+  max-width: 320px;
+  margin: auto;
+  font-family: 'Raleway', sans-serif;
+}
+
+.authHeader {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: capitalize;
+}

@@ -1,8 +1,7 @@
 import api, { setTokenHeader } from '../../api'
-import { SET_AUTH } from '../../types'
 
 export const setAuth = (user) => ({
-  type: SET_AUTH,
+  type: 'SET_AUTH',
   payload: user
 })
 

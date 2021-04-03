@@ -5,6 +5,10 @@ import JCUXFlex from "../jcux/JCUXFlex";
 import styled from "styled-components";
 import JCUXText from "../jcux/JCUXText";
 import JCUXButton from "../jcux/JCUXButton";
+import { connect } from 'react-redux'
+import { withRouter } from 'react-router-dom'
+import { setModalName, setModalOpen } from '../../redux/actions/modal'
+import { logout } from '../../redux/actions/auth'
 
 const StyledLink = styled(JCUXCustomLink)`
   text-decoration: none;
@@ -14,7 +18,12 @@ const StyledLink = styled(JCUXCustomLink)`
   }
 `;
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const handleOnClick = (route) => {
+    props.setModalName(route);
+    props.setModalOpen(true);
+  };
+
   return (
     <JCUXFlex
       background="jcBlueGreen100"
@@ -60,8 +69,22 @@ const Navbar = () => {
             </StyledLink>
           </JCUXFlex>
           <JCUXFlex childSpacingRight="10px">
-            <JCUXButton type="light-outlined">LOGIN</JCUXButton>
-            <JCUXButton type="tertiary">SIGN UP</JCUXButton>
+            <JCUXButton
+              type="light-outlined"
+              onClick={() => {
+                handleOnClick("login");
+              }}
+            >
+              LOGIN
+            </JCUXButton>
+            <JCUXButton
+              type="tertiary"
+              onClick={() => {
+                handleOnClick("signup");
+              }}
+            >
+              SIGN UP
+            </JCUXButton>
           </JCUXFlex>
         </JCUXFlex>
       </JCUXContainer>
@@ -69,4 +92,15 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+const mapStateToProps = (state) => ({
+  authenticated: state.auth.isAuthenticated,
+  user: state.auth.user.fullName,
+});
+
+const mapDispatchToProps = {
+  setModalOpen,
+  setModalName,
+  logout,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter(Navbar));

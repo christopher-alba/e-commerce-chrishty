@@ -26,7 +26,13 @@
     ],
     "plugins": [
       "@babel/plugin-proposal-class-properties",
-      "@babel/plugin-proposal-object-rest-spread"
+      "@babel/plugin-proposal-object-rest-spread",
+      [
+        "@babel/plugin-transform-runtime",
+        {
+          "regenerator": true
+        }
+      ]
     ]
   },
   "jest": {
@@ -35,6 +41,8 @@
     ]
   },
   "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.13.10",
+    "@babel/runtime": "^7.13.10",
     "axios": "^0.21.1",
     "bcrypt": "^5.0.1",
     "css-loader": "^5.1.1",

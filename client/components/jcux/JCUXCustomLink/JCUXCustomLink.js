@@ -42,6 +42,7 @@ const Link = styled.a`
         color:white;
         border: none;
         &:hover, &:focus{
+           color:white;
            background: ${props.theme.colors.jcBlue80};
         }
         &:focus{
@@ -55,6 +56,7 @@ const Link = styled.a`
         color:white;
         border: none;
         &:hover, &:focus{
+          color:white;
           background: ${props.theme.colors.jcBlueGreen80};
         }
         &:focus{
@@ -68,6 +70,7 @@ const Link = styled.a`
       color:white;
       border: none;
       &:hover, &:focus{
+        color:white;
         background: ${props.theme.colors.jcPink80};
       }
       &:focus{
@@ -82,6 +85,7 @@ const Link = styled.a`
       border: none;
       &:hover, &:focus{
         background: ${props.theme.colors.jcBlack80};
+        color: white;
       }
       &:focus{
         box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcBlack0};
@@ -95,6 +99,7 @@ const Link = styled.a`
       border: none;
       &:hover, &:focus{
         background: ${props.theme.colors.jcGrey80};
+        color:black;
       }
       &:focus{
         box-shadow: 0px 0px 0px 5px ${props.theme.colors.jcGrey0};

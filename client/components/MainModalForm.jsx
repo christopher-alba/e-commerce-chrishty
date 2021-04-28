@@ -28,7 +28,7 @@ const ModalMain = (props) => {
       </Fade>
     </Modal>
   );
-};
+}; 
 
 const mapStateToProps = (state) => {
   return {
